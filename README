@@ -1,0 +1,9 @@
+This is my very first sinatra project.
+
+It's a very simple and dumb image proxy for joomeo XMLRPC API written with sinatra web framework and ruby.
+
+It relies on a Redis cache store to cache information about online files to improve performance (joomeo API won't let you get info for only one file)
+
+Joomeo configuration is done through config/joomeo.yml file.
+
+The only supported action is: file/:filename with :filename being the filename of your picture on Joomeo. It takes the two Joomeo http query parameters "type" and "rotation" that will be sent to the api.
