@@ -6,4 +6,4 @@ It relies on a Redis cache store to cache information about online files to impr
 
 Joomeo configuration is done through config/joomeo.yml file.
 
-The only supported action is: file/:filename with :filename being the filename of your picture on Joomeo. It takes the two Joomeo http query parameters "type" and "rotation" that will be sent to the api.
+The only supported action is: file/:filename with :filename being the filename of your picture on Joomeo. It takes the two http query parameters "type" and "album". "type" can be the different joomeo image size types large/small/degraded etc... and "album" scope the file to find for a given album label.
